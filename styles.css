@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    background: rgb(186, 182, 141);
+    background-image: url(fondo.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contenedor {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+
+.contenedor .lado_izquierdo {
+    position: relative;
+    background: #545244;
+    padding: 40px;
+}
+
+.apartado_perfil {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+} 
+
+.apartado_perfil .caja_img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.apartado_perfil .caja_img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.apartado_perfil span {
+    color: #fff;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+.apartado_perfil h2 {
+    color: #fff;
+    font-size: 1.3em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.apartado_perfil h2 span {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.info_contacto {
+    padding-top: 40px;
+    margin: 0px;
+}
+
+.titulo {
+    color: #848c90;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    margin: -10px;
+    text-align: left;
+}
+
+.info_contacto button {
+    margin: -20px;
+    width: 300px;
+    height: 24px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    overflow: hidden;
+}
+
+.info_contacto ul {
+    position: relative;
+    margin: -30px;
+    margin-top: 5px;
+}
+
+.info_contacto ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 10px;
+}
+
+.info_contacto ul li .icono {
+    display: inline-block;
+    width: 50px;
+    font-size: 18px;
+    color: #5c8fa7;
+    margin: -30px;
+    padding-left: 0px;
+}
+
+.info_contacto ul li span {
+    color: #fff;
+    font-weight: 300;
+}
+.info_contacto ul li a {
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+#titulo {
+    color: #5c8fa7;
+    margin-top: 20px;
+}
+
+.info_contacto .educ ul {
+    margin-left: -10px;
+}
+
+.info_contacto li {
+    margin-bottom: 15px;
+    margin-left: -30px;
+}
+
+.educ h5 {
+    color: #5c8fa7;
+    margin-top: 20px;
+}
+
+.educ h4:nth-child(2) {
+    color: #fff;
+    font-weight: 500;
+}
+
+.idiomas {
+    color: #fff;
+    margin-top: 30px;
+}
+
+.idiomas ul {
+    margin-top: 20px;
+}
+
+.idiomas .percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+}
+
+.idiomas .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #5c8fa7;
+}
+
+.contenedor .lado_derecho {
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+.perfil {
+    margin-bottom: 50px;
+}
+
+.perfil:last-child {
+    margin-bottom: 0;
+}
+
+.titulo2 {
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #333;
+    text-align: justify;
+}
+
+.perfil .caja2 {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.perfil .caja2 .anio_empresa {
+    min-width: 150px;
+}
+
+.perfil .caja2 .anio_empresa h5 {
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+
+.perfil .caja2 .texto h4 {
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 1em;
+}
+
+.habilidades .caja2 {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.habilidades .caja2 h4 {
+    text-transform: uppercase;
+    color: #848c99;
+    font-weight: 500;
+}
+
+.habilidades .caja2 .percent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+}
+
+.habilidades .caja2 .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #5c8fa7;
+}
+
+.pasatiempos ul {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.pasatiempos ul li {
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.pasatiempos ul li .fa {
+    color: #4e5d64;
+    font-size: 18px;
+    width: 20px;
+}
+
+.pasatiempos .ul .li .ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+.lista2 li {
+    display: block;
+    float: left;
+    padding: 0 10px;
+}
+
+.tooltip-container {
+    width: 400px;
+    min-height: 60px;
+    height: auto;
+    padding: 15px;
+    font-size: 15px;
+    background: white;
+    box-shadow: 0 30px 90px -20px rgba(0,0,0,0.3);
+    position: absolute;
+    z-index: 100;
+    display: none;
+    opacity: 0;
+    margin-top: -40px;
+    
+  }
+.tooltip-container img {
+    width: 100%;
+    height: 150px;
+}
+  
+  .fade-in {
+    display: block;
+    animation: fade 0.2s linear forwards;
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+
+@media (max-width: 1000px) {
+    .contenedor {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .contenedor .lado_izquierdo {
+        opacity: 0,95;
+        background-color: transparent;
+        color: #fff;
+        text-shadow: black 0.1em 0.1em 0.2em;
+    }
+
+    .contenedor {
+       background-color: transparent;
+    }
+    .info_contacto h3{
+        text-align: center;
+
+    }
+    .info_contacto ul li .icono {
+        color: #fff;
+    }
+    .titulo {
+        color: #c6c6c6;
+        margin-top: 20px;
+    }    
+    .educ h5 {
+        color: rgb(9, 9, 10);
+        margin-left: 108px;
+    }
+    .idiomas h3 {
+        text-align: center;
+    }
+    .idiomas h4 {
+        text-align: center;
+    }
+    .pasatiempos ul {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .tooltip-container {
+        margin-top: -85px;
+    }
+}
+
+@media (max-width: 600px) {
+    .perfil .caja2 {
+        flex-direction: column;
+    }
+    .perfil .caja2 .anio_empresa {
+        margin-bottom: 5px;
+    }
+    .pasatiempos ul {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .habilidades .caja2 {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .tooltip-container {
+        margin-top: -170px;
+    }
+}
